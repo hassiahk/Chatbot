@@ -1,7 +1,11 @@
 import os
 
 while True:
-    query = input('Can you please tell me what can I do for you? ')
+    query = input('Can you please tell me what can I do for you? ').lower()
+    list_no = ['do not', "don't", 'no need', 'no']
+    for i in list_no:
+        if i in query:
+            print('Okay, sure.')
     if 'run' in query or 'open' in query:
         if 'notepad' in query or 'edit' in query:
             os.system('notepad')
