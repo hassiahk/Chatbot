@@ -1,8 +1,8 @@
 import os
 
+list_no = ['do not', "don't", 'no need', 'no']
 while True:
     query = input('Can you please tell me what can I do for you? ').lower()
-    list_no = ['do not', "don't", 'no need', 'no']
     for i in list_no:
         if i in query:
             print('Okay, sure.')
